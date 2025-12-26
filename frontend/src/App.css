@@ -1,0 +1,35 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for motivational quotes */
+.overflow-x-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-x-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Remove default App centering */
+.App {
+    min-height: 100vh;
+}
